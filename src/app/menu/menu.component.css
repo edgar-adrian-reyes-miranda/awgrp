@@ -1,0 +1,34 @@
+/*div .btn {
+  position: relative;
+  display: block;
+  float: left;
+  width: 90px;
+  height: 60px;
+  background-color: #621132;
+  color: #9D1449;
+  text-align: center;
+  cursor: pointer;
+}
+
+div .btn:hover {
+  background-color: #B38E5D;
+}*/
+.menu-items {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100px;
+  height: 90px;
+  background-color: #D4C19C;
+  display: none;
+}
+
+.menu-items li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-items li:hover {
+  background-color: #9D2449;
+}
