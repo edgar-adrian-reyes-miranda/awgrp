@@ -1,34 +1,47 @@
-/*div .btn {
-  position: relative;
-  display: block;
-  float: left;
-  width: 90px;
-  height: 60px;
-  background-color: #621132;
-  color: #9D1449;
-  text-align: center;
-  cursor: pointer;
-}
-
-div .btn:hover {
-  background-color: #B38E5D;
-}*/
-.menu-items {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100px;
-  height: 90px;
+/* Ajustes para el menú lateral */
+mat-sidenav-container {
+  height: 100vh;
   background-color: #D4C19C;
-  display: none;
+}
+a mat-icon{
+  
+  display: flexbox;
+  margin-right: 15px;
+  margin-left: 13px;
+  font-size: 29px; /* Tamaño del icono */
+  color: #9D2449; /* Color del icono */
+}
+mat-sidenav {
+  width: 200px;
 }
 
-.menu-items li {
-  list-style: none;
-  padding: 10px;
-  cursor: pointer;
+mat-sidenav-content {
+  padding: 20px;
 }
 
-.menu-items li:hover {
-  background-color: #9D2449;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #9D1449;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #621132;
+}
+*{
+  background-color: #D4C19C;
+}
+/* Ajustes para los iconos en el menú */
+mat-icon {
+  margin-right: 8px;
 }

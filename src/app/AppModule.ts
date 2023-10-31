@@ -7,11 +7,14 @@ import { FormularioIngresoComponent } from './formulario-ingreso/formulario-ingr
 import { FormularioFTDComponent } from './formulario-ftd/formulario-ftd.component';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule, Routes } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatIconModule} from '@angular/material/icon';
 
 const routes: Routes = [
-  { path: 'formularioEscolar', component: FormularioEscolarComponent },
-  { path: 'formularioFTD', component: FormularioFTDComponent },
-  { path: 'formularioingreso', component: FormularioIngresoComponent }
+  { path: 'formulario-escolar', component: FormularioEscolarComponent },
+  { path: 'formulario-ftd', component: FormularioFTDComponent },
+  { path: 'formulario-ingreso', component: FormularioIngresoComponent }
 ];
 
 @NgModule({
@@ -23,9 +26,13 @@ const routes: Routes = [
     MenuComponent
   ],
   imports: [
+    MatSidenavModule,
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes) // Mueve esta línea aquí
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatIconModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

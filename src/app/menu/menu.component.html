@@ -1,15 +1,17 @@
-<div id="menu">
-  <button class="btn">
-    
-  </button>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened>
+    <!-- Contenido del menú -->
     <ul>
-      <li><a routerLink="/">Inicio</a></li>
-      <li><a routerLink="/datos-personales">Datos Personales</a></li>
-      <li><a routerLink="/formulario-ingreso">Datos Ingreso</a></li>
-      <li><a routerLink="/formulario-ftd">Datos FTD</a></li>
-      <li><a routerLink="/formulario-escolares">Datos Escolares</a></li>
-      <li><a routerLink="#">Generador de PDF/Excel</a></li>
-      <li><a routerLink="#">CRUD Administración</a></li>
-      <li><a routerLink="#">Salir</a></li>
+      <li><a routerLink="/"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        Inicio</a></li>
+      <li><a routerLink="/formulario-ingreso">Formulario Ingreso</a></li>
+      <li><a routerLink="/formulario-ftd">Formulario FTD</a></li>
+      <li><a routerLink="/formulario-escolar">Formulario Escolar</a></li>
     </ul>
-</div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Contenido principal de la aplicación -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
