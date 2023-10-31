@@ -1,1 +1,17 @@
-<p>login-admin works!</p>
+<!-- login.component.html -->
+<link rel="stylesheet" href="login-admin.component.css">
+<div>
+    <h2>Iniciar Sesión</h2>
+    <form (ngSubmit)="onLoginSubmit()">
+      <label for="username">Nombre de Usuario:</label>
+      <input type="text" id="username" name="username" [(ngModel)]="loginData.username" required>
+  
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="loginData.password" required autocomplete="off" aria-label="Contraseña" [placeholder]="Introduce tu contraseña">
+
+  
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
+  <router-outlet></router-outlet>
+  

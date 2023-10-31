@@ -10,6 +10,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatIconModule} from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   { path: 'formulario-escolar', component: FormularioEscolarComponent },
@@ -24,14 +26,18 @@ const routes: Routes = [
     FormularioIngresoComponent,
     FormularioFTDComponent,
     MenuComponent
+  
+    
   ],
   imports: [
     MatSidenavModule,
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    CommonModule
     
   ],
   providers: [],

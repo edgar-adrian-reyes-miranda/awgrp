@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './formulario-ingreso.component.html',
   styleUrls: ['./formulario-ingreso.component.css']
 })
+
+
 export class FormularioIngresoComponent {
+  loginData: any = {};
 
 }
