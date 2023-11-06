@@ -1,0 +1,19 @@
+form {
+    padding: 154px;
+    margin-bottom: 54px;
+    margin-left: 390px;
+    margin-right: 390px;
+    text-align: center;
+    align-items: center;
+    background-color: #4E232E;
+    border-radius: 43px;
+
+}
+
+form div{
+    background-color: #4E232E;
+}
+form div label{
+    background-color: #4E232E;
+    color: white;
+}
