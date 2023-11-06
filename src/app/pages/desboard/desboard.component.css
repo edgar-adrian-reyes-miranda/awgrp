@@ -1,8 +1,9 @@
 form {
-    padding: 154px;
-    margin-bottom: 54px;
-    margin-left: 390px;
-    margin-right: 390px;
+    margin-top: 40px;
+    padding: 130px;
+    margin-bottom: 68px;
+    margin-left: 470px;
+    margin-right: 470px;
     text-align: center;
     align-items: center;
     background-color: #4E232E;
@@ -17,4 +18,15 @@ form div label{
     background-color: #4E232E;
     color: white;
 }
+div form button{
+    margin: 20px;
+    align-items: center;
+
+}
+div .form-control{
+    background-color: white;
+    color: black;
+    width: 390px;
+}
+
 
